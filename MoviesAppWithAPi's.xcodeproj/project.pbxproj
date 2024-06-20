@@ -11,6 +11,7 @@
 		9455341B2C231CFB00C99A45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9455341A2C231CFB00C99A45 /* ContentView.swift */; };
 		9455341D2C231CFC00C99A45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9455341C2C231CFC00C99A45 /* Assets.xcassets */; };
 		945534202C231CFC00C99A45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9455341F2C231CFC00C99A45 /* Preview Assets.xcassets */; };
+		945534272C231D7200C99A45 /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945534262C231D7200C99A45 /* MovieStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		9455341A2C231CFB00C99A45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9455341C2C231CFC00C99A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9455341F2C231CFC00C99A45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		945534262C231D7200C99A45 /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				945534182C231CFB00C99A45 /* MoviesAppWithAPi_sApp.swift */,
 				9455341A2C231CFB00C99A45 /* ContentView.swift */,
+				945534262C231D7200C99A45 /* MovieStore.swift */,
 				9455341C2C231CFC00C99A45 /* Assets.xcassets */,
 				9455341E2C231CFC00C99A45 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9455341B2C231CFB00C99A45 /* ContentView.swift in Sources */,
+				945534272C231D7200C99A45 /* MovieStore.swift in Sources */,
 				945534192C231CFB00C99A45 /* MoviesAppWithAPi_sApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
