@@ -20,6 +20,18 @@ struct ContentView: View {
             ForEach(store.movies ?? [Movie](), id: \.imdbID){
                 movie in
                 
+                AsyncImage(url: URL(string: movie.poster)) { image in
+                               image
+                                   .resizable()
+                                   .aspectRatio(contentMode: .fit)
+                                   .clipShape(Circle())
+                               
+                           } placeholder: {
+                               Circle()
+                               .foregroundColor(.secondary)
+                           }
+                           .frame(width: 120, height: 120)
+                
                 Text(movie.title)
             }
             
