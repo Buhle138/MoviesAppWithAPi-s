@@ -8,19 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var store: MovieStore
+    
+    let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+       
+        LazyVGrid(columns: columns){
+            
+            ForEach(store.movies ?? [Movie](), id: \.imdbID){
+                movie in
+                
+                Text(movie.title)
+            }
+            
         }
-        .padding()
+        
+            .onAppear{
+                store.getAll()
+            }
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(store: MovieStore())
     }
 }
