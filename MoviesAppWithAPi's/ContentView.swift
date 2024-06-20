@@ -56,10 +56,11 @@ struct ContentView: View {
                 }
                 .navigationTitle("Movies")
             }
-        
-        
             .onAppear{
-                store.getAll()
+                store.getAll(search: search)
+            }
+            .onSubmit {
+                store.getAll(search: search)
             }
         
     }

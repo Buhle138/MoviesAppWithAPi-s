@@ -32,9 +32,9 @@ class MovieStore: ObservableObject {
     
     @Published var movies: [Movie]? = [Movie]()
     
-    func getAll(){
-        
-        guard let url = URL(string: "https://www.omdbapi.com/?s=Ring&apikey=eb99ee82") else{
+    func getAll(search: String){
+        let searchQuery = search.isEmpty ? "Ring" : search
+        guard let url = URL(string: "https://www.omdbapi.com/?s=\(searchQuery)&apikey=eb99ee82") else{
             fatalError("Invalid URL")
         }
      
