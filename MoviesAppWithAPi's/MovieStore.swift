@@ -34,7 +34,7 @@ class MovieStore: ObservableObject {
     
     func getAll(){
         
-        guard let url = URL(string: "https://www.omdbapi.com/?s=Batman&apikey=eb99ee82") else{
+        guard let url = URL(string: "https://www.omdbapi.com/?s=Ring&apikey=eb99ee82") else{
             fatalError("Invalid URL")
         }
      
